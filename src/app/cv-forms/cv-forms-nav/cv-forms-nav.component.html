@@ -1,19 +1,27 @@
 <ul class="nav nav-tabs justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" routerLink='personal-data'>Personal Data</a>
+      <a class="nav-link" routerLink='personal-data' routerLinkActive='active'>Personal Data</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink='qualifications'>Qualifications</a>
+      <a class="nav-link" routerLink='qualifications' routerLinkActive='active'>Qualifications</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink='experiences'>Experiences</a>
+      <a class="nav-link" routerLink='experiences' routerLinkActive='active'>Experiences</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink='courses'>Courses</a>
+      <a class="nav-link" routerLink='courses' routerLinkActive='active'>Courses</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink='skills'>Skills</a>
+      <a class="nav-link" routerLink='skills' routerLinkActive='active'>Skills</a>
     </li>
 </ul>
 
-<router-outlet></router-outlet>
+<div class="row">
+  <div class="col-md-4">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="col-md-8">
+    <app-cv-artboard></app-cv-artboard>
+  </div>
+</div>
+

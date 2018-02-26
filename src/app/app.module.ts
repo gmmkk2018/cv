@@ -11,6 +11,7 @@ import { ExperiencesComponent } from './cv-forms/experiences/experiences.compone
 import { CoursesComponent } from './cv-forms/courses/courses.component';
 import { SkillsComponent } from './cv-forms/skills/skills.component';
 import { MainNavComponent } from './ui/main-nav/main-nav.component';
+import { CvArtboardComponent } from './cv-forms/cv-artboard/cv-artboard.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MainNavComponent } from './ui/main-nav/main-nav.component';
     ExperiencesComponent,
     CoursesComponent,
     SkillsComponent,
-    MainNavComponent
+    MainNavComponent,
+    CvArtboardComponent
   ],
   imports: [
     BrowserModule,
