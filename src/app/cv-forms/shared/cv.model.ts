@@ -4,6 +4,6 @@ export class PersonalData{
     firstName: string;
     nationality: string;
     dateOfBirth: Data;
-    mobile: string;
+    mobile:string;
     email: string;
 }
