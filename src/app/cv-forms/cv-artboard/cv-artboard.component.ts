@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CvService } from '../shared/cv.service';
+import { PersonalData } from '../shared/cv.model';
 
 @Component({
   selector: 'app-cv-artboard',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvArtboardComponent implements OnInit {
 
-  constructor() { }
+  personalData = new PersonalData;
+
+  constructor(private cvService: CvService) { }
 
   ngOnInit() {
+    this.personalData = this.cvService.getSharedValue();
   }
 
 }

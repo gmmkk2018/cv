@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CvService } from '../shared/cv.service';
+import { PersonalData } from '../shared/cv.model';
 
 @Component({
   selector: 'app-personal-data',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalDataComponent implements OnInit {
 
-  constructor() { }
+  personalData = new PersonalData;
+
+  constructor(private cvService: CvService) { }
 
   ngOnInit() {
+    this.personalData.email = 'love@gmail.com';
   }
 
+  testKeyUp(){
+    this.cvService.setSharedValue(this.personalData);
+    console.log(this.personalData.email);
+  }
 }
